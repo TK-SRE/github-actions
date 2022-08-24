@@ -1,0 +1,13 @@
+name: shell commands
+
+on: [Push]
+
+jobs:
+  definitions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: text
+        run: "Description: Here is the details of workflow"
+      - name: commands
+        run: echo "Hello World"
+
