@@ -10,4 +10,8 @@ jobs:
         run: "Description: Here is the details of workflow"
       - name: commands
         run: echo "Hello World"
+      - name: Pyhon
+        run: |
+          import platform
+          print(platform.processor())
 
