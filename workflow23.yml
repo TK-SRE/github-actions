@@ -1,0 +1,20 @@
+name: shell commands
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  definitions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: text
+        run: "Description: Here is the details of workflow"
+      - name: commands
+        run: echo "Hello World"
+      - name: Pyhon
+        run: |
+          import platform
+          print(platform.processor())
