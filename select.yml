@@ -12,4 +12,5 @@ jobs:
         run: |
            node -v
            npm -v
-           
+      - name: Here we go!
+        run: echo "Run this script"
