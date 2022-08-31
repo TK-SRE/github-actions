@@ -20,13 +20,6 @@ jobs:
     steps: 
       - name: list files
         uses: actions/checkout@v3
-        run: |
-          ls ${{$GITHUB.WORKSPACE}}
-          sudo ./svc.sh install
-          ./svc.sh install USERNAME 
-          sudo ./svc.sh start
-          sudo ./svc.sh status   
-          echo ":) I am dome !!!!!!!!!! please print this message"
-
+        
 
 
