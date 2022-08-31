@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   run-shell-commands:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps: 
       - name: single command 
         run: echo "Hello World"
