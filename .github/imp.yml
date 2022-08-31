@@ -1,0 +1,26 @@
+name: shell commands
+
+on: [Push]
+
+jobs:
+  run-shell-commands:
+    runs-on: self-hosted
+    steps: 
+      - name: single command 
+        run: echo "Hello World"
+      - name: 
+        run: |
+           node -v
+           npm -v
+      - name: runs-on-self-hosted
+        run: echo "Run this script"
+  run-shell-commands-2:
+    runs-on: windows
+    steps: 
+      - name: list files
+        uses: actions/checkout@v3
+        run: ls ${{$GITHUB.WORKSPACE}}       
+
+
+
+
