@@ -1,7 +1,16 @@
-name: shell commands
+name: 'MIGRATE DATABASE TEST'
 
-on: [push]
-
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'target environment'
+        required: true
+        default: 'qa'
+        type: choice
+        options:
+          - stage
+          - qa
 jobs:
   run-shell-commands:
     runs-on: ubuntu-latest
