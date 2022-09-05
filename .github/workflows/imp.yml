@@ -1,12 +1,6 @@
 name: shell commands
 
-on: 
-  workflow_dispatch:
-    inputs:
-      name:
-        description: "IMP"
-        default: "HII"
-        required: true 
+on: [push, workflow_dispatch]
 
 jobs:
   run-shell-commands:
@@ -16,7 +10,7 @@ jobs:
         run: echo "Hello World"
       - name: multi-line
         run: |
-          node -v
+          node -v       
           npm -v
       - name: runs-on-self-hosted
         run: echo "Run this script !!!!!"
