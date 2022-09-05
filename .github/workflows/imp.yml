@@ -1,6 +1,12 @@
 name: shell commands
 
-on: [push]
+on: 
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "IMP"
+        default: "HII"
+        required: true 
 
 jobs:
   run-shell-commands:
@@ -20,8 +26,8 @@ jobs:
     needs: run-shell-commands
     steps: 
       - name: list files
-        uses: actions/checkout@v3
-        
+        uses: actions/checkout@v2
+
 
 
 
