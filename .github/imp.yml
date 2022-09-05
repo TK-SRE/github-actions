@@ -25,8 +25,7 @@ jobs:
           ./svc.sh install USERNAME 
           sudo ./svc.sh start
           sudo ./svc.sh status   
-          echo ":) I am dome !!!!!!!!!!" 
-
+          echo ":) I am dome !!!!!!!!!! please print this message"
 
 
 
